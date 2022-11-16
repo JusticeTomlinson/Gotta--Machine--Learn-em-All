@@ -3,11 +3,14 @@ from Move import PKMNMove
 
 
 class Pokemon:
-    def __init(self, name: str, ability: str, item: str, gender: str,
-               attack: float, hp: float, defense: float, special_attack: float,
-               special_defense: float, speed: float, nature: str,
-               moves: List[PKMNMove], EVs: List[float]) -> None:
+    def __init(self, name: str, level: int, ptype: List[str], ability: str,
+               item: str, gender: str, attack: float, hp: float, defense: float,
+               special_attack: float, special_defense: float, speed: float,
+               nature: str, moves: List[PKMNMove], EVs: List[float]) -> None:
+
         self.name = name
+        self.level = level
+        self.ptype = ptype
         self.ability = ability
         self.item = item
         self.gender = gender

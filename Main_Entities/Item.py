@@ -8,7 +8,7 @@ class Item:
     name : str
         The name of the Ability.
     description : str
-        A decription of the Item.
+        A description of the Item.
 .
     Methods
     -------

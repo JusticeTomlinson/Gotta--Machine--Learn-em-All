@@ -25,11 +25,12 @@ class PKMNMove:
     -------
     """
     def __init(self, name: str, description: str, base_damage: float,
-               accuracy: float, status_type: str,
+               ptype: str, accuracy: float, status_type: str,
                status_chance: float, pp: int):
         self.name = name
         self.description = description
         self.base_damage = base_damage
+        self.ptype = ptype
         self.accuracy = accuracy
         self.status_type = status_type
         self.status_chance = status_chance
