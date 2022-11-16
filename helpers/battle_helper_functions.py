@@ -38,4 +38,8 @@ def check_if_winner(trainer1: Trainer, trainer2: Trainer) -> Union[None, Trainer
 
 def check_effectiveness(move: PKMNMove, pokemon: Pokemon) -> float:
     move_type = move.ptype
+    pass
 
+
+def calculate_total_damage(move: PKMNMove, attacking_pokemon, target_pokemon: Pokemon):
+    pass

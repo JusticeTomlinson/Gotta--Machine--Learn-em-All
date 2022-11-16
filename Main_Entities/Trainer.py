@@ -1,3 +1,4 @@
+import random
 from typing import List
 
 from Main_Entities.Battle_Entities.TeamBE import TeamBE
@@ -29,8 +30,9 @@ class Trainer:
         for pokemon in self.team.all_pokemon:
             pokemon.display_stats()
 
-    def determine_action(self):
-        pass
+    def determine_action(self) -> str:
+        options = ['swap', 'attack']
+        return random.choice(options)
 
     def attack(self, attack_policy, target) -> None:
         pass
